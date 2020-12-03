@@ -1,0 +1,8 @@
+{
+  "name": "zeromq-server",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "https://github.com/Vetnametz/zeromq-server.git",
+  "author": "Vitalii Trachenko",
+  "license": "MIT"
+}
