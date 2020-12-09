@@ -1,4 +1,5 @@
 import {Dealer} from "zeromq";
+import { ReactIRParams } from "./interface";
 
 export class Queue {
   queue: any[] = [];
