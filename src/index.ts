@@ -14,7 +14,7 @@ async function main() {
     const reactIRData = new ReactIR().generateFakeReactIR();
     queue.send(JSON.stringify(reactIRData));
     queue.send(null);
-  }, 60000);
+  }, 2000);
 
 }
 

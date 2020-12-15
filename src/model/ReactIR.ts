@@ -1,4 +1,4 @@
-import { DeviceState, ConnectionType } from '../enum';
+import { DeviceState, ConnectionType, InterlockState } from '../enum';
 import { ReactIRParams } from '../interface';
 import { NetworkInterfaceInfo, networkInterfaces } from 'os';
 import faker from 'faker';
@@ -10,8 +10,9 @@ export class ReactIR {
 
     generateFakeReactIR(): ReactIRParams {
         return {
-            orientation: 90,
+            orientation:faker.random.objectElement({one: 90, two: 0}),
             state: this.getRandomEnum(DeviceState),
+            interlock: this.getRandomEnum(InterlockState),
             ip: this.getPrivateIPNInfos()[0]?.address || '0.0.0.0',
             connection: this.getRandomEnum(ConnectionType),
             fw: faker.lorem.word(),
