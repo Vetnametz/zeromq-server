@@ -1,8 +1,9 @@
-import { DeviceState, ConnectionType } from "../enum";
+import { DeviceState, ConnectionType, InterlockState } from "../enum";
 
 export interface ReactIRParams {
     orientation: Number;
     state: DeviceState;
+    interlock: InterlockState;
     ip: String;
     connection: ConnectionType;
     fw: String;
