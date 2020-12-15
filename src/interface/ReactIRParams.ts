@@ -1,7 +1,7 @@
 import { DeviceState, ConnectionType, InterlockState } from "../enum";
 
 export interface ReactIRParams {
-    orientation: Number;
+    orientation: Object;
     state: DeviceState;
     interlock: InterlockState;
     ip: String;
