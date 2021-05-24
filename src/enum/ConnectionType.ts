@@ -1,5 +1,5 @@
 export enum ConnectionType {
-    USB = 'USB',
-    ETHERNET = 'Ethernet',
-    WIFI = 'WiFi',
+    USB = 'usb',
+    ETHERNET = 'ethernet',
+    WIFI = 'wifi',
 }

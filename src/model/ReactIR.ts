@@ -10,16 +10,20 @@ export class ReactIR {
 
     generateFakeReactIR(): ReactIRParams {
         return {
-            orientation:faker.random.objectElement({one: 90, two: 0}),
+            orientation:faker.random.objectElement({one: 90, two: 0, three: 270}),
             state: this.getRandomEnum(DeviceState),
-            interlock: this.getRandomEnum(InterlockState),
-            ip: this.getPrivateIPNInfos()[0]?.address || '0.0.0.0',
-            connection: this.getRandomEnum(ConnectionType),
-            fw: faker.lorem.word(),
-            friendlyName: faker.name.firstName(),
-            experiment: faker.hacker.abbreviation(),
-            expTimeRemaining: faker.date.past(),
-            sensorTemperature: faker.random.number(100),
+            ip_address: this.getPrivateIPNInfos()[0]?.address || '0.0.0.0',
+            network: this.getRandomEnum(ConnectionType),
+            friendly_name: faker.name.firstName(),
+            probe:faker.random.objectElement({one: 0, two: 1 }),
+            key:faker.random.objectElement({one: 0, two: 1 }),
+            door:faker.random.objectElement({one: 0, two: 1 }),
+            laser:faker.random.objectElement({one: 0, two: 1 }),
+            file_name: faker.hacker.abbreviation(),
+            time_remaining: faker.date.past(),
+            set_temperature: faker.random.number(100),
+            // interlock: this.getRandomEnum(InterlockState),
+            // fw: faker.lorem.word(),
         }
         
     }

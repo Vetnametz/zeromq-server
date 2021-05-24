@@ -1,6 +1,7 @@
 export enum DeviceState {
-    COOLING = 'Cooling',
-    IDLE = 'Idle',
-    INPROGRESS = 'Experiment in progress',
-    READY = 'Ready'
+    COOLING = 'cooling',
+    NOTREADY = 'not_ready',
+    WORKING = 'working',
+    READY = 'ready',
+    SPINNER = 'spinner'
 }
