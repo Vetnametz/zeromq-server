@@ -3,5 +3,5 @@ export enum DeviceState {
     NOTREADY = 'not_ready',
     WORKING = 'working',
     READY = 'ready',
-    SPINNER = 'spinner'
+    // SPINNER = 'spinner'
 }
